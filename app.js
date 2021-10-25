@@ -14,3 +14,18 @@ function updateclock(){
     hourupdate.style.transform="rotate("+(hour*360) + "deg)";
     
 }
+/*------------login js */
+document.querySelector('.show-login').addEventListener('click',function()
+{
+    document.querySelector(".popup").classList.add("active");
+    document.querySelector(".center").classList.add("actives");
+    
+    
+});
+
+document.querySelector(".popup .close-btn").addEventListener('click',
+function()
+{
+    document.querySelector(".center").classList.remove("actives");
+    document.querySelector(".popup").classList.remove("active");
+});
